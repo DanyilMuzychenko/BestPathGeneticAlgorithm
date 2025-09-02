@@ -1,1 +1,57 @@
-# Optimization-of-delivery-route-using-genetic-algorithm System znajdowania najbardziej optymalnej trasy pomiędzy dziesięcioma miastami przy użyciu algorytmu genetycznego. <p align="center"> <img src="https://img.shields.io/badge/Engine-PyCharm%2023-B7F352" alt="Engine"> </p> ## About Celem projekta jest zastosowanie algorytmu genetycznego w celu optymalizacji trasy dostaw dla przedsiębiorstwa kurierskiego, które posiada zestaw klientów z określonymi lokalizacjami i paczkami do dostarczenia. Głównym celem jest znalezienie optymalnej trasy, która minimalizuje łączny koszt lub czas dostawy. Algorytm genetyczny powinien być używany do efektywnego eksplorowania przestrzeni możliwych tras, uwzględniając ograniczenia i preferencje związane z dostawami, aby zaoferować przedsiębiorstwu kurierskiemu optymalne rozwiązanie logistyczne. </br> ## Documentation ### Libraries - numpy, random, matplotlib, folium ### Definicja danych - Przygotowano macierze odległości między miastami, kosztów paliwa i ilości zużytego paliwa. ### Generowanie genotypu - Tworzy losową trasę w postaci np. {5, 2, 6, 4, 1, 3, 7, 9, 10, 8}. ### Inicjalizacja populacji - Tworzenie początkowej populacji o rozmiarze zmiennej SELF_SIZE ### Ocena funkcji docelowej - Obliczenie efektywności trasy według odległości, kosztu i ilości paliwa. ### Ewolucja populacji - Stworzenie algorytmu genetycznego obejmującego metody selekcji, krzyżowania i mutacji, oraz ocenę każdego osobnika. ### Optymalizacja - Przeprowadzono kilka generacji, zastosowano ustawienia algorytmu genetycznego, takie jak liczba pokoleń, rozmiar turnieju oraz prawdopodobieństwo krzyżowania i mutacji. ### Wizualizacja wyników - Wykorzystuje bibliotekę Folium do stworzenia interaktywnej mapy pokazującej miasta i optymalną trasę. ## Developers - Danyil Muzychenko (https://github.com/DanyilMuzychenko)
+# Optimization of Delivery Route Using Genetic Algorithm
+A system for finding the most optimal route between ten cities using a genetic algorithm.
+
+<p align="center">
+   <img src="https://img.shields.io/badge/Engine-PyCharm%2023-B7F352" alt="Engine">
+</p>
+
+## 📌 About
+
+The purpose of this project is to apply a **genetic algorithm** to optimize delivery routes for a courier company that serves a set of clients with specific locations and packages to deliver.  
+The main objective is to find an **optimal route** that minimizes the total cost or delivery time.  
+The genetic algorithm efficiently explores the space of possible routes, considering delivery constraints and preferences, to provide the courier company with an **optimal logistics solution**.
+
+---
+
+## 📖 Documentation
+
+### 🔧 Libraries
+- `numpy`
+- `random`
+- `matplotlib`
+- `folium`
+
+### 🗂 Data Definition
+- Prepared distance matrices between cities, fuel costs, and fuel consumption.
+
+### 🧬 Genotype Generation
+- Creates a random route in the form of, for example:  
+  `{5, 2, 6, 4, 1, 3, 7, 9, 10, 8}`
+
+### 🌱 Population Initialization
+- Generates an initial population with size defined by `SELF_SIZE`.
+
+### 📊 Fitness Evaluation
+- Calculates route efficiency based on **distance, cost, and fuel consumption**.
+
+### 🔄 Population Evolution
+- Implements a genetic algorithm including:
+  - Selection
+  - Crossover
+  - Mutation
+  - Fitness evaluation of each individual
+
+### 🚀 Optimization
+- Runs through several generations with GA settings such as:
+  - Number of generations
+  - Tournament size
+  - Crossover probability
+  - Mutation probability
+
+### 🗺 Visualization of Results
+- Uses **Folium** to create an interactive map showing cities and the optimal route.
+
+---
+
+## 👨‍💻 Developers
+- [Danyil Muzychenko](https://github.com/DanyilMuzychenko)
